@@ -1,0 +1,12 @@
+Package: sentimiento
+Title: Sentimiento" Package for sentiment analysis in Spanish"
+Version: 0.1
+Authors@R: "Javier Sajuria <j.sajuriat@ucl.ac.uk> [aut, cre]"
+Description: This is a re-version of the sentiment package created by Timothy
+    P. Jurka <tpjurka@ucdavis.edu>, using a manually created lexicon in Spanish
+Depends:
+    R (>= 3.0.2),
+    tm,
+    Rstem
+License: GNU-3
+LazyData: no
