@@ -30,7 +30,7 @@
 
 classify_polarity <- function(textColumns,algorithm="bayes",pstrong=0.5,pweak=1.0,prior=1.0,verbose=FALSE,...) {
 	matrix <- create_matrix(textColumns,...)
-	lexicon <- read.csv(system.file("data/lexicon.csv.gz",package="sentimiento"),header=FALSE)
+	lexicon <- read.csv(system.file("data/lexicon2.csv",package="sentimiento"),header=FALSE)
 
 	counts <- list(positive=length(which(lexicon[,3]=="positive")),negative=length(which(lexicon[,3]=="negative")),total=nrow(lexicon))
 	documents <- c()
